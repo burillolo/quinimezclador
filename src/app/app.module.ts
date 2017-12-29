@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { QuininputComponent } from './quininput/quininput.component';
+import { QuinicountComponent } from './quinicount/quinicount.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuininputComponent,
+    QuinicountComponent
   ],
   imports: [
     BrowserModule

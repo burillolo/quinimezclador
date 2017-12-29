@@ -1,0 +1,16 @@
+<ul>
+  <li class="quininput-header">
+    <span class="option-header">{{availableOption[1]}}</span>
+    <span class="option-header">{{availableOption['X']}}</span>
+    <span class="option-header">{{availableOption[2]}}</span>
+  </li>
+  <li *ngFor="let option of options">
+    <span class="badge">{{option.id}}</span>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="1"/>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="X"/>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="2"/>
+  </li>
+</ul>
+<p>
+  {{currentName}}
+</p>

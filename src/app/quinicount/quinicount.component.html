@@ -1,0 +1,16 @@
+<ul>
+  <li class="quiniresult-header">
+    <span class="option-header">{{availableOption[1]}}</span>
+    <span class="option-header">{{availableOption['X']}}</span>
+    <span class="option-header">{{availableOption[2]}}</span>
+  </li>
+  <li *ngFor="let countOptions of countResultsOptions">
+    <span class="badge">{{countOptions.match.id}}</span>
+    <span>{{countOptions.results[1]}}</span>
+    <span>{{countOptions.results['X']}}</span>
+    <span>{{countOptions.results[2]}}</span>
+  </li>
+</ul>
+<p>
+  TOTALES
+</p>
