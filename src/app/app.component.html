@@ -5,8 +5,8 @@
   </h1>
 </div>
 <div class="app-quini-lists">
-<app-quininput *ngFor="let name of quiniNames" [currentName]="name"></app-quininput>
-<app-quinicount></app-quinicount>
+<app-quininput *ngFor="let name of quiniNames" [currentName]="name" (quiniOptionSelect)="refreshCounterValues($event)"></app-quininput>
+<app-quinicount [countResultsOptions]="quiniCounts"></app-quinicount>
 </div>
 <div>
   <label>Nombre quiniela: </label>

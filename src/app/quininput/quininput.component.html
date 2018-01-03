@@ -6,9 +6,9 @@
   </li>
   <li *ngFor="let option of options">
     <span class="badge">{{option.id}}</span>
-    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="1"/>
-    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="X"/>
-    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, value)" [value]="2"/>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, $event.target.value)" [value]="availableOption[1]"/>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, $event.target.value)" [value]="availableOption['X']"/>
+    <input type="radio" name="option-{{currentName}}-{{option.id}}" (change)="onSelectionChange(option, $event.target.value)" [value]="availableOption[2]"/>
   </li>
 </ul>
 <p>
