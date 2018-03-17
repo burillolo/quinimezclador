@@ -1,0 +1,11 @@
+/*.radio:before {
+  border-radius: 8px;
+}*/
+
+input[type=radio]:checked:after {
+    content: "\2573";
+    color: #5f0909;
+    font-size: 15px;
+    text-align: center;
+    line-height: 18px;
+}
